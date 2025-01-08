@@ -1,0 +1,38 @@
+.news-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.news-article {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.news-article h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.news-article p {
+  font-size: 14px;
+}
+
+.news-article span {
+  font-size: 12px;
+  color: gray;
+}
+
+@media (max-width: 768px) {
+  .news-container {
+    padding: 10px;
+  }
+
+  .news-article h2 {
+    font-size: 16px;
+  }
+
+  .news-article p {
+    font-size: 12px;
+  }
+}

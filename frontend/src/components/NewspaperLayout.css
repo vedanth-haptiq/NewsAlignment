@@ -1,0 +1,88 @@
+.newspaper-container {
+  font-family: "Georgia", serif;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+
+.main-column {
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.article {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.article h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.article p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+.article a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.article a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .main-column h2 {
+    font-size: 1.5em;
+  }
+
+  .article h3 {
+    font-size: 1.3em;
+  }
+
+  .article p {
+    font-size: 0.9em;
+  }
+}
