@@ -14,7 +14,6 @@ const NewspaperLayout = ({ selectedCategory }) => {
           <NewsFetcher category={selectedCategory} />
         </section>
       </div>
-      
     </div>
   );
 };

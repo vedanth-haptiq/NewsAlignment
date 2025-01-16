@@ -22,6 +22,7 @@ const NewsPage = () => {
   return (
     <div className="news-page">
       <div className="top-news">
+        {/* <h2>Top 3 High-Priority News</h2> */}
         {topNews.map((article, index) => (
           <div className="news-item" key={index}>
             <h2>{article.title}</h2>
@@ -30,6 +31,7 @@ const NewsPage = () => {
         ))}
       </div>
       <div className="all-news">
+        {/* <h2>All News</h2> */}
         {news.map((article, index) => (
           <div className="news-item" key={index}>
             <h2>{article.title}</h2>
@@ -42,5 +44,3 @@ const NewsPage = () => {
 };
 
 export default NewsPage;
-
-
