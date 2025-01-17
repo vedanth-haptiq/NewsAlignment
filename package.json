@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "mongoose": "^8.9.3",
-    "react-spinners": "^0.15.0"
-  }
-}
