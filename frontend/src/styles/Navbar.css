@@ -1,0 +1,204 @@
+.navbar {
+  background: linear-gradient(135deg, #00274d, #004080);
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+  font-size: 50px;
+  margin-left: 25px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-family: "Poppins", sans-serif;
+  transition: all 0.5s ease;
+  display: inline-block;
+}
+
+.navbar-brand:hover {
+  color: #00bcd4;
+  transform: scale(1.1) rotate(-5deg);
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes logoAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.navbar-brand {
+  animation: logoAnimation 2s infinite;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-links li button:hover {
+  color: #00bcd4;
+  transform: translateY(-2px);
+}
+
+.nav-item {
+  margin-right: 50px;
+}
+
+.dropdown-menu {
+  background: white;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.dropdown-item {
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  padding: 30px;
+}
+
+.dropdown-item:hover {
+  background-color: #00bcd4;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar-brand {
+    font-size: 24px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links li button {
+    font-size: 14px;
+  }
+}
+.btn-secondary {
+  background: linear-gradient(135deg, #00bcd4, #0097a7);
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+.btn-secondary {
+  animation: logoAnimation 3s infinite;
+}
+.btn-secondary:hover {
+  background: linear-gradient(135deg, #0097a7, #00bcd4);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-secondary:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.btn-secondary:active::after {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  transition: transform 0s, opacity 0s;
+}
+
+.dropdown-menu {
+  background: white;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  animation: slideDown 0.3s ease-in-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-item {
+  color: #333;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.dropdown-item:hover {
+  background-color: #00bcd4;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar-brand {
+    font-size: 24px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links li button {
+    font-size: 14px;
+  }
+}
